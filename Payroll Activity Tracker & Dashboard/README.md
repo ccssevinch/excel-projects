@@ -52,3 +52,19 @@ The workbook consists of several sheets, each serving a specific purpose:
 - **Clean, Professional Dashboard:**  
   The Dashboard sheet integrates key visual elements, keeping raw data and pivot tables on separate sheets to maintain clarity.
 
+## How to Use
+
+1. **Update Employee Data:**  
+   Modify or add employee details on the `Employee_Info` sheet.
+
+2. **Enter Payroll Data:**  
+   Record payroll entries for each employee and pay period in the `Payroll_Log` sheet.
+
+3. **Input Deductions:**  
+   On the `Deductions` sheet, enter deduction amounts ensuring Employee_ID and Pay_Period_End match those in the Payroll_Log.
+
+4. **Adjust Tax Rates:**  
+   Modify tax rates as needed in the `Tax_Info` sheet.
+
+5. **Interact with the Dashboard:**  
+   Use slicers on the `Dashboard` sheet to filter the pivot charts and gain insights into payroll trends and statuses.
