@@ -76,7 +76,7 @@ The workbook consists of several sheets, each serving a specific purpose:
 ## Additional Enhancements
 
 - **Locking Slicers:**  
-  You can lock slicers to prevent accidental movement or resizing, especially useful when the sheet is protected.
+  Slicers' lock property is used to prevent accidental movement or resizing which is especially useful when the sheet is protected.
 
 - **Macro for Refresh:**  
-  Optionally, a refresh macro can be added to update all pivot tables and charts with a single click.
+  A refresh macro is added to update all pivot tables and charts with a single click.
