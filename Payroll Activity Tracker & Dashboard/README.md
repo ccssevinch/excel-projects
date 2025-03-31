@@ -32,5 +32,23 @@ The workbook consists of several sheets, each serving a specific purpose:
   Contains tax rate information used to compute the Tax_Withheld:
   - For example, Federal Tax, Medicare, and Social Security rates.
  
+- **Dashboard:**  
+  An interactive dashboard that consolidates:
+  - **Pivot Charts:** Visualizations (e.g., line charts for Gross_Pay and Net_Pay over time).
+  - **Slicers:** Allow interactive filtering (e.g., by Pay_Period_End, Payment_Status).
+  - Additional key metrics and summaries for a quick, at-a-glance view of payroll performance.
+ 
+## Key Features
 
+- **Dynamic Calculations:**  
+  Automated formulas calculate Gross_Pay, Tax_Withheld, and Net_Pay based on employee type and input data.
+
+- **Structured Data with Validation:**  
+  Employee details are maintained in an Excel Table (EmployeeTable), ensuring data integrity through structured references and drop-down lists.
+
+- **Interactive Analysis:**  
+  Pivot tables and pivot charts, coupled with slicers, enable real-time filtering and detailed analysis.
+
+- **Clean, Professional Dashboard:**  
+  The Dashboard sheet integrates key visual elements, keeping raw data and pivot tables on separate sheets to maintain clarity.
 
