@@ -68,3 +68,15 @@ The workbook consists of several sheets, each serving a specific purpose:
 
 5. **Interact with the Dashboard:**  
    Use slicers on the `Dashboard` sheet to filter the pivot charts and gain insights into payroll trends and statuses.
+
+- **Microsoft Excel 2019 or Office 365:**  
+  The project utilizes features such as XLOOKUP, structured tables, and advanced pivot chart functionalities which are best supported in these versions.
+
+
+## Additional Enhancements
+
+- **Locking Slicers:**  
+  You can lock slicers to prevent accidental movement or resizing, especially useful when the sheet is protected.
+
+- **Macro for Refresh:**  
+  Optionally, a refresh macro can be added to update all pivot tables and charts with a single click.
