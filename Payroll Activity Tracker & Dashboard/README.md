@@ -23,5 +23,14 @@ The workbook consists of several sheets, each serving a specific purpose:
   - **Net_Pay:** Derived from Gross_Pay minus Total_Deductions and Tax_Withheld.
   - **Payment_Status & Date_Processed:** Allows tracking of payroll processing stages.
 
+- **Deductions:**  
+  Records deduction amounts per employee per pay period, including:
+  - **Health_Insurance, Retirement_401k, Other:** Individual deduction entries.
+  - **Total_Deductions:** A calculated field summing the above values.
+ 
+- **Tax_Info:**  
+  Contains tax rate information used to compute the Tax_Withheld:
+  - For example, Federal Tax, Medicare, and Social Security rates.
+ 
 
 
