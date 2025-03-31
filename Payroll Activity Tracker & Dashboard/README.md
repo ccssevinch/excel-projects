@@ -80,3 +80,7 @@ The workbook consists of several sheets, each serving a specific purpose:
 
 - **Macro for Refresh:**  
   A refresh macro is added to update all pivot tables and charts with a single click.
+
+## Author
+
+- [Sevinch Primova](https://github.com/ccsevinch)
