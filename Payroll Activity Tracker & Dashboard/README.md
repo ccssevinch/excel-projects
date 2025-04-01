@@ -83,4 +83,4 @@ The workbook consists of several sheets, each serving a specific purpose:
 
 ## Author
 
-- [Sevinch Primova](https://github.com/ccsevinch)
+- [Sevinch Primova](https://github.com/ccssevinch)
