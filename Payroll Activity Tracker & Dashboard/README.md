@@ -81,6 +81,8 @@ The workbook consists of several sheets, each serving a specific purpose:
 - **Macro for Refresh:**  
   A refresh macro is added to update all pivot tables and charts with a single click.
 
+  Note: Macros and buttons require Excel Desktop to run properly. Excel for Web does not support VBA.
+
 ## Author
 
 - [Sevinch Primova](https://github.com/ccssevinch)
