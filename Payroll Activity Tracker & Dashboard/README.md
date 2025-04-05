@@ -82,6 +82,7 @@ The workbook consists of several sheets, each serving a specific purpose:
   A refresh macro is added to update all pivot tables and charts with a single click.
 
   Note: Macros and buttons require Excel Desktop to run properly. Excel for Web does not support VBA.
+  To refresh all pivot tables: Right-click any table and select "Refresh."
 
 ## Author
 
