@@ -123,7 +123,7 @@ Tax_Info!B3 -> Medicare Tax Rate (0.0145 or 1.45)
    
 3. Multiplies that total tax rate by Gross Pay (F2):
    
- 2000 * 0.1965 = 393 -> Tax Withheld
+   2000 * 0.1965 = 393 -> Tax Withheld
 
 ### Using LET():
 ```excel
@@ -138,5 +138,25 @@ The gives total tax amount wihheld for this pay period for this employee.
 
 
 ### Net_Pay:
-   
+
+F2 -> Gross Pay
+G2 -> Total Deductions (like 401k, health, etc)
+H2 -> Tax Withheld (combined federal, medicare, social security)
+
+```excel
+= F2 - G2 - H2
+```
+This formula subtracts:
+Net_Pay = Gross_Pay - Total_Deductions - Tax_Withheld
+
+### Using LET():
+
+```excel
+= LET (
+grossPay, F2,
+deductions, G2,
+tax, H2,
+grossPay - deductions - tax
+)
+```
 
