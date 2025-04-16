@@ -27,7 +27,7 @@ XLOOKUP(B2, EmployeeTable[Employee_ID], EmployeeTable[Pay_Type])
 
 This looks up the Pay_Type (Hourly or Salary) of the employee whose ID is in cell B2.
 If the result = "Hourly", the employee is paid by the hour.
-
+```
 ### Then the formula becomes:
 
 ```excel
@@ -36,7 +36,7 @@ If the result = "Hourly", the employee is paid by the hour.
   E2 * Pay_Rate,
   Pay_Rate
 )
-
+```
 If the employee is Hourly: Multiply Hours_Worked (E2) × Pay_Rate
 If the employee is Salary: Just return Pay_Rate (assuming this is per pay period)
 
