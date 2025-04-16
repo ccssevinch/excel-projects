@@ -45,6 +45,7 @@ If the result = "Hourly", the employee is paid by the hour.
 )
 ```
 If the employee is Hourly: Multiply Hours_Worked (E2) × Pay_Rate
+
 If the employee is Salary: Just return Pay_Rate (assuming this is per pay period)
 
 
@@ -81,6 +82,7 @@ F -> Total_Deductions
 ### What It Does:
 
 Adds the Health Insurance, 401(k) Retirement, and Other deductions for the current row (row2).
+
 This gives the total amount deducted for this pay period for this employee.
 
 
@@ -96,8 +98,45 @@ This gives the total amount deducted for this pay period for this employee.
 )
 ```
 ### What It Does:
+
 Defines short, meaningful variable names for each employment
+
 Adds them together in a total variable
+
 Returns total as the final result
 
+### Tax Withheld 
+
+F2 -> Refers to Gross Pay on the current row (F2 -> $4800)
+
+Tax_Info!B2 -> Federal Tax Rate (0.12 or 12%)
+
+Tax_Info!B3 -> Medicare Tax Rate (0.0145 or 1.45)
+
+```excel
+= F2 * (Tax_Info!B2 + Tax_Info!B3 + Tax_Info!B4)
+```
+### What this formula does:
+1. Adds up all three tax rates:
+   
+   0.10 + 0.0145 + 0.062 = 0.1965
+   
+3. Multiplies that total tax rate by Gross Pay (F2):
+   
+ 2000 * 0.1965 = 393 -> Tax Withheld
+
+### Using LET():
+```excel
+grossPay, F2,
+fedTax, Tax_Info!B2,
+medTax, Tax_Info!B3,
+ssTax, Tax_Info!B4,
+totalTaxRate, fedTax + medTax + ssTax,
+grossPay * totalTaxRate
+```
+The gives total tax amount wihheld for this pay period for this employee.
+
+
+### Net_Pay:
+   
 
