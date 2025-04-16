@@ -1,5 +1,6 @@
 <h1>Purpose</h1>
 
+This Excel-based Payroll Tracker simulates core HRIS functionality and automates payroll operations using nested formulas, dynamic tables, and macro-driven dashboards.
 This Markdown document explains all formulas used in the Payroll Tracker Excel file, covering their purpose, logic, dependencies, and where they are located. This is designed to help users, and reviewers understand the inner workings of each sheet, cell, and calculation, and to ensure easy scalability and maintenance for future updates.
 
 ### Formula used to calculate the Gross_Pay (Hourly & Salaried Employees):
