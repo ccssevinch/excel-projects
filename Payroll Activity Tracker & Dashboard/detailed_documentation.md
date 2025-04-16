@@ -10,6 +10,7 @@ This Markdown document explains all formulas used in the Payroll Tracker Excel f
   E2 * XLOOKUP(B2, EmployeeTable[Employee_ID], EmployeeTable[Pay_Rate]),
   XLOOKUP(B2, EmployeeTable[Employee_ID], EmployeeTable[Pay_Rate])
 )
+'''
 
 ### Context:
 
