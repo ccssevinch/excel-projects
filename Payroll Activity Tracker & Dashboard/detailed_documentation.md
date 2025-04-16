@@ -11,4 +11,31 @@ This Markdown document explains all formulas used in the Payroll Tracker Excel f
   XLOOKUP(B2, EmployeeTable[Employee_ID], EmployeeTable[Pay_Rate])
 )
 
+### Context:
+
+You're on the Payroll_Log sheet, and you want to calculate Gross_Pay using:
+B2 → Employee_ID (used to look up info in EmployeeTable)
+E2 → Hours_Worked
+Pay_Type → Either "Hourly" or "Salary"
+Pay_Rate → Either the hourly rate or fixed salary per period
+
+### Explaining line by line:
+
+```excel
+XLOOKUP(B2, EmployeeTable[Employee_ID], EmployeeTable[Pay_Type])
+
+This looks up the Pay_Type (Hourly or Salary) of the employee whose ID is in cell B2.
+If the result = "Hourly", the employee is paid by the hour.
+
+### Then the formula becomes:
+
+```excel
+= IF(
+  Pay_Type = "Hourly",
+  E2 * Pay_Rate,
+  Pay_Rate
+)
+
+If the employee is Hourly: Multiply Hours_Worked (E2) × Pay_Rate
+If the employee is Salary: Just return Pay_Rate (assuming this is per pay period)
 
