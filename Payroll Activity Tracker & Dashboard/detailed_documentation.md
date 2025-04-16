@@ -14,7 +14,7 @@ This Markdown document explains all formulas used in the Payroll Tracker Excel f
 
 ### Context:
 
-You're on the Payroll_Log sheet, and you want to calculate Gross_Pay using:
+Let's assume that you're on the Payroll_Log sheet, and you want to calculate Gross_Pay using:
 
 B2 → Employee_ID (used to look up info in EmployeeTable)
 
@@ -43,4 +43,18 @@ If the result = "Hourly", the employee is paid by the hour.
 ```
 If the employee is Hourly: Multiply Hours_Worked (E2) × Pay_Rate
 If the employee is Salary: Just return Pay_Rate (assuming this is per pay period)
+
+
+We can also use LET() to reuse the variables and to make complex formulas readable like the following:
+
+```excel
+=LET(
+    empID, B2,
+    hoursWorked, E2,
+    payType, XLOOKUP(empID, EmployeeTable[Employee_ID], EmployeeTable[Pay_Type]),
+    payRate, XLOOKUP(empID, EmployeeTable[Employee_ID], EmployeeTable[Pay_Rate]),
+    IF(payType = "Hourly", hoursWorked * payRate, payRate)
+)
+```
+
 
