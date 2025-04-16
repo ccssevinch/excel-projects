@@ -15,9 +15,13 @@ This Markdown document explains all formulas used in the Payroll Tracker Excel f
 ### Context:
 
 You're on the Payroll_Log sheet, and you want to calculate Gross_Pay using:
+
 B2 → Employee_ID (used to look up info in EmployeeTable)
+
 E2 → Hours_Worked
+
 Pay_Type → Either "Hourly" or "Salary"
+
 Pay_Rate → Either the hourly rate or fixed salary per period
 
 ### Explaining line by line:
