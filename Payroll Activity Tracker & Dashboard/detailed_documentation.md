@@ -164,7 +164,7 @@ grossPay - deductions - tax
 
 To keep your dashboard charts, pivot tables, and summary views up to date after making changes to data in any of the sheets (Payroll_Log, Employee_Infor, etc.), the workbook includes a Refresh Macro. 
 
-<h3>How It Works:<h3>
+<h3>How It Works:</h3>
 
 The macro automatically runs the ThisWorkbook.RefreshAll command.
 
@@ -177,7 +177,9 @@ Any summary cells or formulas that are linked to these data sources (like totals
 
 <h3>How to Use It:</h3>
 1. Enable Macros when opening the file.
+
 2. Click the "Refresh All" button on the Dashboard (or use the Developer tab if you're in edit mode).
+
 3. All dashboards and summaries will update instantly.
 
 ### Macro Code:
