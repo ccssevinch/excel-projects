@@ -171,8 +171,11 @@ The macro automatically runs the ThisWorkbook.RefreshAll command.
 When clicked, the Refresh All macro ensures that all of the following elements reflect the most up-do-date data:
 
 Pivot Tables
+
 Pivot Charts
+
 Slicers
+
 Any summary cells or formulas that are linked to these data sources (like totals, averages, or KPI indicators on the dashboard)
 
 <h3>How to Use It:</h3>
