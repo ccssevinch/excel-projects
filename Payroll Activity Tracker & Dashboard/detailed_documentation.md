@@ -176,6 +176,7 @@ Slicers
 Any summary cells or formulas that are linked to these data sources (like totals, averages, or KPI indicators on the dashboard)
 
 <h3>How to Use It:</h3>
+
 1. Enable Macros when opening the file.
 
 2. Click the "Refresh All" button on the Dashboard (or use the Developer tab if you're in edit mode).
