@@ -124,6 +124,7 @@ Save the file
 Use slicers or filters on Dashboard sheet to verify the new employees appear in summaries and pivot tables 
 
 <h3>Best Practices</h3>
+
 Always create a backup before importing new data
 
 Make sure the new data uses the same format and column headers as the original 
