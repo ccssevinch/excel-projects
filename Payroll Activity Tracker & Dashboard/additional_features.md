@@ -90,6 +90,40 @@ columns = [
 df = pd.DataFrame(employee_data, columns=columns)
 df.to_excel("Generated_Employees_PAT.xlsx", index=False)
 
-print(f"Generated {num_employees} employees and saved to Excel Projects folder")
-
+print(f"Generated {num_employees} employees and saved to Excel Projects folder")C
 ```
+
+<h3>Step-by-Step instructions:</h3>
+<h4>1. Locate the Generated Employee File</h4>
+The employee records were generated using Python with the faker libary.
+Default file name: Generated_Employees_PAT.xlsx
+Check your local project folder or Downloads folder for this file.
+
+<h4>2. Open Both Excel Files</h4>
+Open: Payroll_Tracker.xlsx
+Open: generated_employees.xlsx
+
+<h4>3. Prepare the Data for Import</h4>
+Ensure that your generated employee file has the following columns in this exact order:
+| Employee_ID | Full_Name | Department | Position | Hire_Date | Pay_Type | Pay_Rate | Bank_Account | Activity_Status 
+
+<h4>4. Import into Employee_Info Sheet</h4>
+1. Go to the Employee_Info sheet in Payroll_Tracker.xlsx
+2. Scroll to the bottom of the existing table
+3. Select the first empty row inside the Excel Table (EmployeeTable)
+4. Paste the 200 new rows from the generated file
+Ensure you're pasting directly into the Excel Table so it auto-expands and inherits formatting and formulas. 
+
+<h4>5. Confirm the Format</h4>
+All columns should match the expected format
+Bank accounts should appear like XXXX-1234
+Pay_Type must be either Hourly or Salary 
+
+<h4>6. Save and Test</h4>
+Save the file 
+Use slicers or filters on Dashboard sheet to verify the new employees appear in summaries and pivot tables 
+
+<h3>Best Practices</h3>
+Always create a backup before importing new data
+Make sure the new data uses the same format and column headers as the original 
+Keep your Excel Tables intact - pasting inside them ensures they expand correctly 
