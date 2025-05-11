@@ -125,5 +125,7 @@ Use slicers or filters on Dashboard sheet to verify the new employees appear in 
 
 <h3>Best Practices</h3>
 Always create a backup before importing new data
+
 Make sure the new data uses the same format and column headers as the original 
+
 Keep your Excel Tables intact - pasting inside them ensures they expand correctly 
